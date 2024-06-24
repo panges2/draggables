@@ -193,9 +193,17 @@ function adjustNestAreaLayout(nestArea) {
     child.style.top = `${maxColumnHeight}px`;
     currentColumnHeight = currentColumnHeight > child.offsetHeight ? currentColumnHeight : child.offsetHeight;
     currentColumn++;
+    console.log("child width: " + child.offsetWidth); 
   });
 
-  nestArea.style.width = `${maxRowLength}px`;
+  // Get the parent draggable element and its text element
+  const parentDraggable = nestArea.parentElement;
+  const parentTextElement = parentDraggable.querySelector('.draggableText');
+  const parentTextWidth = parentTextElement ? parentTextElement.offsetWidth + 20 : 0; // Include padding
+
+  console.log("max row: " + maxRowLength);   
+  // Set the nest area width based on the minimum of the sum of the widths of its children or the parent text length
+  nestArea.style.width = `${Math.max(maxRowLength, parentTextWidth)}px`;
   nestArea.style.height = `${maxColumnHeight + currentColumnHeight + 10}px`;
 }
 
