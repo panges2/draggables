@@ -1,0 +1,27 @@
+html {
+  font-size: 15px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "Merriweather", serif; /* this should be the rest of the output you got from Google Fonts */
+  background-color: #dae3ea;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #dae3ea;
+}
+
+.draggable {
+  /* width: 200px;
+  height: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: move;
+  position: absolute;
+  border: 2px;
+  background-color: transparent;
+  border: #000000;
+}
