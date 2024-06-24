@@ -1,5 +1,7 @@
 # Draggables
 
+<img width="684" alt="Screenshot 2024-06-24 at 6 15 10 PM" src="https://github.com/panges2/draggables/assets/96081835/bbf82170-636c-4c47-9d9d-d0e9ad169e34">
+
 This project provides a simple and intuitive interface for creating draggable elements within a web page. Users can create new draggable elements by double-clicking anywhere on the page, and these elements can be nested within each other, allowing for a flexible and dynamic layout.
 
 ## Features
